@@ -1,0 +1,80 @@
+body{
+    text-align: center;
+    background-color: #282c34;
+}
+.container{
+    width: 60%;
+    margin: 10% auto 0;
+    padding: 2% 5%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.set-wifi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.set-wifi .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    padding: 10px;
+    font-weight: bold;
+}
+.set-wifi .row input{
+    margin-left: 10px;
+    padding: 6px 10px;
+    color: #000;
+    font-weight: bold;
+    border-color: #000;
+    border-radius: 10px;
+    outline: none;
+}
+.set-wifi button{
+    margin: 10px;
+    padding: 5px 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: #000;
+    border-radius: 5px;
+    outline: none;
+}
+.set-wifi button:hover,.set-wifi .row input:focus{
+    color: blue;
+    border-color: blue;
+}
+.res-info{
+    height:100px;
+    width: 233px;
+    margin: 18px 0 10px 0;
+    padding: 6px 10px;
+    color: #000;
+    font-weight: bold;
+    border-color: #000;
+    border-radius: 10px;
+    outline: none;
+}
+
+@media screen and (max-width: 40em){
+    .container{
+        width: 90%;
+    }
+    .set-wifi button{
+        margin: 10px 0 0 0;
+    }
+    .set-wifi .row span{
+    padding: 3px 0;
+    }
+    .set-wifi .row input{
+        margin-left: 0;
+    }
+}
